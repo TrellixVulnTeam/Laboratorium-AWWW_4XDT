@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+<div class="form">
+    <h2>Wybierz opcję</h2>
+    <form>
+        <div class="place_option">
+            <input type="radio" id="góry" name="place" value="góry">
+            <label for="góry">Góry  10 USD</label>
+        </div>
+        <div class="place_option">
+            <input type="radio" id="morze" name="place" value="morze">
+            <label for="morze">Morze  20 USD</label>
+        </div>
+        <div class="place_option">
+            <input type="radio" id="miasto" name="place" value="miasto">
+            <label for="miasto">Miasto  30 USD</label>
+        </div>
+    </form>
+    <form>
+        <label for="ilosc">Ilość</label>
+        <input type="number" id="ilosc" name="ilosc">
+        <button type="button">Dalej</button>
+    </form>
+</div>
+<div class="summary">
+    <h2>Podsumowanie</h2>
+    <div class="summary_type">
+        <h4>Opcja</h4>
+        Góry
+    </div>
+    <div class="summary_type">
+        <h4>Ilość</h4>
+        12
+    </div>
+    <div class="summary_type">
+        <h4>Cena jednostkowa</h4>
+        10 USD
+    </div>
+    <div class="summary_type">
+        <h4>Cena</h4>
+        40 USD
+    </div>
+</div>
+</body>
+</html>
