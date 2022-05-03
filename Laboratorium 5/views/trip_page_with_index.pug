@@ -1,0 +1,32 @@
+extends szablon
+
+block head
+    title Wycieczka
+    link(rel='stylesheet' type='text/css' href='/css/trip_style.css')
+
+block content
+    img(src='images/image1.jpg' alt='')
+    h1= data[data1][0]
+    p.text= data[data1][1]
+    h2 Nag&lstrok;&oacute;wek z tytu&lstrok;em
+    p.text
+        | Tu kolejny fragment tekstu. Mo&zdot;e si&eogon; sk&lstrok;ada&cacute; z kilku akapit&oacute;w.
+        | W pierwszej wersji tekst na pewno nie b&eogon;dzie op&lstrok;ywa&lstrok; obrazka, ale to poprawimy p&oacute;&zacute;niej.
+    h2 Jeszcze jeden nag&lstrok;&oacute;wek
+    p.text
+        | I kolejne informacje o wycieczce, kt&oacute;rych nie chcia&lstrok;o mi si&eogon; wymy&sacute;la&cacute;.
+    h2 Istotne informacje
+    .dashed
+        ul.text
+            li termin wycieczki: kiedy&sacute; w przysz&lstrok;o&sacute;ci
+            li temperatury w miejscu docelowym: nie za wysokie
+            li warto zabra&cacute;: troch&eogon; ubra&nacute; na zmian&eogon;
+            li= data[data1][2]
+    h2 Program wycieczki
+    ol.text
+        li Odwiedziny w miejscu
+        li Obiad
+        li Wyprawa na szczyt wszystkiego
+    .buttons
+        a.return(href='main') &lt; Powr&oacute;t
+        a.reserve(href='form') Zarezerwuj &gt;

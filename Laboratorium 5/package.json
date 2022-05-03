@@ -19,7 +19,7 @@
     "check_files": "src/java_script/*.mjs"
   },
   "scripts": {
-    "start": "nodemon java_script/app.js",
+    "start": "nodemon app.js",
     "develop": "npm-watch",
     "check_files": "npx eslint java_script/*.mjs"
   }

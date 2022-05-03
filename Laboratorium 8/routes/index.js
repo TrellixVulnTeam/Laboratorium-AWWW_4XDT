@@ -81,20 +81,4 @@ router.get('/part4/:file', (req, res) => {
   // });
 });
 
-// const axios = require('axios');
-// const res = require("express/lib/response");
-//
-// axios.get('/part1').then((response) => {console.log(response)}).catch(() => {});
-//
-// async function getUser() {
-//     try {
-//         const response = await axios.get('/user?ID=12345');
-//         console.log('HELLLLLLLO' + response);
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-//
-// getUser().then(() => {}).catch(() => {});
-
 module.exports = router;

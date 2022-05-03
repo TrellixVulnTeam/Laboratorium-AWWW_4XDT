@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
     color: peru;
 }
 
+h1 a:link, a:visited {
+    color: peru;
+}
+
 .price_and_reserve {
     display: flex;
     align-items: center;
