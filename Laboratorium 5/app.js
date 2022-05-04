@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const port = 3030;
 
 app.set('view engine', 'pug');
 app.set('view engine', 'pug');
