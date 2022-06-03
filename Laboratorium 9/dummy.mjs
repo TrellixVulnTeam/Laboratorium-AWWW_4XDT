@@ -1,3 +1,0 @@
-// Taka wersja import pozwoli obsłużyć ewentualne błędy...
-
-const { database, Wycieczka, Zgloszenie } = await import('./database.mjs');
