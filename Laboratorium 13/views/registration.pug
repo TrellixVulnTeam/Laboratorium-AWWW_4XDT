@@ -1,0 +1,40 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Register
+    link(rel='shortcut icon' href='#')
+
+body
+    form#registration(action=`/successful_registration` method='post')
+        .form-item
+            p#name_field
+                label(for='name') Name
+                br
+                input#name(type='text' name='name')
+                span#name_wrong
+        .form-item
+            p#surname_field
+                label(for='surname') Surname
+                br
+                input#surname(type='text' name='surname')
+                span#surname_wrong
+        .form-item
+            p#email_field
+                label(for='email') Email
+                br
+                input#email(type='text' name='email')
+                span#email_wrong
+        .form-item
+            p#password_field
+                label(for='password') Password
+                br
+                input#password(type='text' name='password')
+                span#password_wrong
+        .form-item
+            p#confirm_password_field
+                label(for='confirm_password') Confirm password
+                br
+                input#confirm_password(type='text' name='confirm_password')
+                span#confirm_password_wrong
+        input#submit-button(type='submit' value='Submit')
+script.

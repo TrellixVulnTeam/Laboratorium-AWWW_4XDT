@@ -1,0 +1,15 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Successul Login
+    link(rel='shortcut icon' href='#')
+
+body
+    h1#success Your login was successful!
+    p#display_bookings
+        ul
+             each val in reservations
+                 li= "Reservation for trip with id " + val.myTripID + " for " + val.number_of_seats + " seats, on name " + val.name + " " + val.last_name
+    a(href='/logout')
+        button(type='button') Logout
+script.
