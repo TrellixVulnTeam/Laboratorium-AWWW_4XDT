@@ -1,10 +1,8 @@
-// import { promises as fsp } from "fs";
 import { equal } from "assert";
 import {Builder, By, Capabilities, until} from "selenium-webdriver";
-// import { fun, asyncfun } from "./example.mjs";
-import { get_all_wycieczki, get_wycieczka } from "../database/queries.mjs";
+import { get_all_wycieczki } from "../database/queries.mjs";
 import { init_func } from "../database/init_db.mjs";
-import { get_db_memory, get_db_postgres } from "../database/database.mjs";
+import { get_db_postgres } from "../database/database.mjs";
 import * as should from 'should';
 
 const TIMEOUT = 10000;
