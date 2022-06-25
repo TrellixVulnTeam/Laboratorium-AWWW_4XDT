@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="css/form_style.css">
+    <script type="module">
+        import {komunikat} from './java_script/modul.mjs';
+        console.log(komunikat);
+    </script>
+</head>
+<body>
+<div class="form">
+    <h2>Wybierz opcję</h2>
+    <form>
+        <div class="place_option">
+            <input type="radio" id="góry" name="place" value="góry">
+            <label for="góry">Góry  10 USD</label>
+        </div>
+        <div class="place_option">
+            <input type="radio" id="morze" name="place" value="morze">
+            <label for="morze">Morze  20 USD</label>
+        </div>
+        <div class="place_option">
+            <input type="radio" id="miasto" name="place" value="miasto">
+            <label for="miasto">Miasto  30 USD</label>
+        </div>
+    </form>
+    <form>
+        <p>
+            <label for="ilosc">Ilość</label>
+            <input type="number" id="ilosc" name="ilosc">
+        </p>
+        <button type="button" id="myBtn">Dalej</button>
+    </form>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="form_summary">Podsumowanie: </p>
+            <p><button type="button" class="close" data-dismiss="modal">Close</button></p>
+        </div>
+    </div>
+</div>
+<!--<div class="summary">-->
+<!--    <h2>Podsumowanie</h2>-->
+<!--    <div class="summary_type">-->
+<!--        <h4>Opcja</h4>-->
+<!--        Góry-->
+<!--    </div>-->
+<!--    <div class="summary_type">-->
+<!--        <h4>Ilość</h4>-->
+<!--        12-->
+<!--    </div>-->
+<!--    <div class="summary_type">-->
+<!--        <h4>Cena jednostkowa</h4>-->
+<!--        10 USD-->
+<!--    </div>-->
+<!--    <div class="summary_type">-->
+<!--        <h4>Cena</h4>-->
+<!--        40 USD-->
+<!--    </div>-->
+<!--</div>-->
+<div class="name_surname">
+    <form id="name_surname" action="https://www.w3schools.com/js/js_validation.asp">
+        <p id="name_field">
+            <label for="name">Imię</label>
+            <input type="text" id="name" name="name">
+            <span id="name_wrong"></span>
+        </p>
+        <p id="surname_field">
+            <label for="surname">Nazwisko</label>
+            <input type="text" id="surname" name="surname">
+            <span id="surname_wrong"></span>
+        </p>
+        <button type="submit" id="submit_button">Submit</button>
+    </form>
+</div>
+<script>
+    console.log("aaa");
+</script>
+</body>
+</html>

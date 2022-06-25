@@ -1,0 +1,11 @@
+html
+    head
+        title Wycieczki
+    body
+        h1 Lista wycieczek
+        -
+        each item in data
+            h3
+                li= item[0]
+            p= item[1]
+            p= item[2]

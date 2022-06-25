@@ -1,0 +1,91 @@
+body {
+    background-color: lavenderblush;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+}
+
+h1 {
+    color: indigo;
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+h2, h3, h4, h5, h6 {
+    color: darkmagenta;
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 20px;
+}
+
+img {
+    width: 45%;
+    height: 30%;
+    object-fit: cover;
+    float: left;
+    margin-right: 14px;
+}
+
+.dashed ul {
+    list-style-type: none;
+}
+
+.dashed ul li:before {
+    content: "–";
+    position: absolute;
+    margin-left: -1em;
+}
+
+.return:link, .return:visited, .reserve:link, .reserve:visited {
+    background-color: lavenderblush;
+    border: 1px solid indigo;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.return:hover, .reserve:hover {
+    background-color: lavender;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    color: indigo;
+}
+
+.header {
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.header a, .footer a, .footer p {
+    color: indigo;
+}
+
+.header img {
+    width: 100px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer {
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 3px 10px;
+}

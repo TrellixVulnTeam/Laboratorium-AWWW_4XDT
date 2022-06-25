@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "browser-sync": "^1.9.2",
+    "express": "^4.18.0",
+    "express-validator": "^6.14.1",
+    "http-serve": "^1.0.1",
+    "npm-watch": "^0.11.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "pug": "^3.0.2",
+    "sequelize": "^6.20.1"
+  },
+  "name": "trip-reservation-page",
+  "author": "Julia Podrażka",
+  "description": "Page offers a variety of trips with reasonable prices ready to reserve.",
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.16"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  }
+}

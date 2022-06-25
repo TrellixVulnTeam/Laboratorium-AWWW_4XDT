@@ -1,0 +1,22 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Login
+    link(rel='shortcut icon' href='#')
+
+body
+    form#login(action=`/successful_login` method='post')
+        .form-item
+            p#email_field
+                label(for='email') Email
+                br
+                input#email(type='text' name='email')
+                span#email_wrong
+        .form-item
+            p#password_field
+                label(for='password') Password
+                br
+                input#password(type='text' name='password')
+                span#password_wrong
+        input#submit-button(type='submit' value='Submit')
+script.

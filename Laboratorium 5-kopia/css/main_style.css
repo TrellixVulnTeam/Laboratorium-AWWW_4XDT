@@ -1,0 +1,114 @@
+body {
+    background-color: floralwhite;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.header a, .footer a, .footer p {
+    color: darksalmon;
+}
+
+.header img {
+    max-width: 100px;
+    max-height: 40px;
+    object-fit: contain;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+@media only screen and (max-width:50em) {
+    .main {
+        display: block;
+        overflow: auto;
+    }
+}
+
+.left {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+@media only screen and (max-width:80em) {
+    .left {
+        display: block;
+        overflow: auto;
+    }
+}
+
+.left img {
+    width: 90%;
+    height: 80%;
+}
+
+.ex_option {
+    max-width: 450px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: peru;
+}
+
+h1 a:link, a:visited {
+    color: peru;
+}
+
+.price_and_reserve {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    justify-content: space-between;
+}
+
+.price_and_reserve a:link, a:visited {
+    text-decoration: none;
+}
+
+.ex_info {
+    margin-left: 20px;
+}
+
+.ex_info a:link, a:visited {
+    text-decoration: none;
+}
+
+.advice a:link, a:visited {
+    border: 1px solid indigo;
+    border-style: dashed;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.advice a:hover {
+    background-color: lavender;
+}
+
+@media only screen and (max-width:50em) {
+    .advice {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    padding: 10px 10px;
+}

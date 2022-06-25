@@ -1,0 +1,68 @@
+extends szablon
+
+block head
+    title Strona g&lstrok;&oacute;wna
+    link(rel='stylesheet' href='/css/main_style.css')
+
+block content
+    .main
+        .left
+            .image
+                img(src='images/image1.jpg' alt='')
+            .ex_option
+                h1
+                    a(href='trip_page1') Szczyt wszystkiego
+                p.description
+                    | Kr&oacute;tka wycieczka z wej&sacute;ciem na ten w&lstrok;a&sacute;nie szczyt.
+                .price_and_reserve
+                    p Cena: 17 USD
+                    a(href='form') Zarezerwuj &gt;&gt;
+            .image
+                img(src='images/image2.jpg' alt='')
+            .ex_option
+                h1
+                    a(href='trip_page2') Dalekie morza
+                p.description
+                    | M&oacute;rz jest wiele, wi&eogon;c i opis mo&zdot;e by&cacute; nieco d&lstrok;u&zdot;szy ni&zdot; poprzednio. Atrakcji te&zdot; mo&zdot;e by&cacute; wi&eogon;cej.
+                .price_and_reserve
+                    p Cena: 20 USD
+                    a(href='form') Zarezerwuj &gt;&gt;
+            .image
+                img(src='images/image3.jpg' alt='')
+            .ex_option
+                h1
+                    a(href='trip_page3') Miasto
+                p.description
+                    | Na &sacute;wiecie mamy jeszcze miasta. Mo&zdot;na je zwiedza&cacute;.
+                .price_and_reserve
+                    p Cena: 30 USD
+                    a(href='form') Zarezerwuj &gt;&gt;
+        .right
+            .special.offer
+                h2 Promocje
+                .ex_offer
+                    h3 G&oacute;ry wysokie
+                    .ex_info
+                        p.date Kiedy&sacute;
+                        a.reserve(href='form') Rezerwuj &gt;&gt;
+                .ex_offer
+                    h3 Inne miejsce
+                    .ex_info
+                        p.date Kiedy&sacute;
+                        a.reserve(href='form') Rezerwuj &gt;&gt;
+                .ex_offer
+                    h3 Te&zdot; gdzie&sacute;
+                    .ex_info
+                        p.date Kiedy&sacute;
+                        a.reserve(href='form') Rezerwuj &gt;&gt;
+                .ex_offer
+                    h3 Warszawa
+                    .ex_info
+                        p.date Kiedy&sacute;
+                        a.reserve(href='form') Rezerwuj &gt;&gt;
+            .advice
+                h2 Porady
+                a(href='main_page') Co zabra&cacute; na wycieczk&eogon;?
+                a(href='main_page') Kiedy najlepiej wyjecha&cacute;?
+                a(href='main_page') Jakie buty s&aogon; najwygodniejsze?
+

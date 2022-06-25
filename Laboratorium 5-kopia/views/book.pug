@@ -1,0 +1,39 @@
+// Laboratorium 11
+
+doctype html
+head
+    meta(charset='UTF-8')
+    title Formularz
+    link(rel='shortcut icon' href='#')
+    link(rel='stylesheet' type='text/css' href='/css/form_style.css')
+
+.name_surname
+    form#name_surname(action=`/book/${id}` method='post')
+        .form-item
+            p#name_field
+                label(for='name') Imi&eogon;
+                br
+                input#name(type='text' name='name')
+                span#name_wrong
+        .form-item
+            p#surname_field
+                label(for='surname') Nazwisko
+                br
+                input#surname(type='text' name='surname')
+                span#surname_wrong
+        .form-item
+            p#email_field
+                label(for='email') Email
+                br
+                input#email(type='text' name='email')
+                span#email_wrong
+        .form-item
+            p#registration_number_field
+                label(for='registration_number') Liczba zgłoszeń
+                br
+                input#registration_number(type='number' name='registration_number')
+                span#registration_number_wrong
+        input#submit-button(type='submit' value='Submit')
+script.
+
+// Koniec Laboratorium 11
